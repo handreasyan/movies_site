@@ -1,0 +1,67 @@
+@import url("./zeroing.css");
+.root {
+  width: 100%;
+  height: 100%;
+}
+.root .image_content {
+  grid-area: a;
+  border: 5px solid silver;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+}
+.root .image_content {
+  position: relative;
+  width: 20%;
+  height: 20%;
+}
+
+@media (min-width: 870px) {
+  .root {
+    display: grid;
+    grid-template-areas: " a b b " "c c c" "c c c";
+    column-gap: 5px;
+    row-gap: 20px;
+  }
+  .root .image_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+.root .image_content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.root .description_content {
+  padding-left: 10px;
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  justify-content: space-around;
+}
+.root .description_content div {
+  border-bottom: 1px solid silver;
+  padding-bottom: 5px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.root .description_content div span {
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: 100;
+  color: teal;
+}
+
+.root .forMovie {
+  grid-area: c;
+  letter-spacing: 1px;
+  line-height: 15px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  height: 100%;
+}

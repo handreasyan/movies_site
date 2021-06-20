@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/filmPageStayles.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./src/filmPageStayles.js" async></script>
+    <script src="./src/centerContent.js" async></script>
+    <script src="./src/aside.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header">
+            <div class="logo_content">
+              <a href="index.html"><img src="./logo.png" alt="Logo_img" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <main class="main">
+            <aside class="aside">
+              <div class="for_teatre">
+                <h3>See days examples of films . . .</h3>
+                <div class="dropdown_selects">
+                  <select class="dropdown_select days_select">
+                    <option value="">Day</option>
+                  </select>
+                  <select class="dropdown_select months_select">
+                    <option value="">Month</option>
+                  </select>
+                  <select class="dropdown_select years_select">
+                    <option value="">Year</option>
+                  </select>
+                </div>
+                <button class="search_by_date">Search by Date</button>
+              </div>
+              <div class="films_random_content">
+                <h3>The Best Films of this Year</h3>
+                <div class="films_random"></div>
+              </div>
+            </aside>
+            <section class="content_body">
+              <div class="genres_content">
+                <h3>Find Films By Genre</h3>
+                <div class="all_genres"></div>
+              </div>
+              <div class="all_films"></div>
+            </section>
+          </main>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
